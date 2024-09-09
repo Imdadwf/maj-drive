@@ -1,0 +1,46 @@
+{
+  "name": "mydrive",
+  "version": "1.0.0",
+  "description": "Mon Drive",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-builder": "^25.0.5"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.4"
+  },
+  "build": {
+    "appId": "com.mydrive.app",
+    "productName": "My Drive",
+    "icon": "./favicon.png",  
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "main.js",
+      "index.html"
+    ],
+    "win": {
+      "icon": "./favicon.ico"  
+    },
+    "mac": {
+      "icon": "./apple-touch-icon.png"  
+    },
+    "linux": {
+      "icon": "./android-chrome-512x512.png"  
+    },
+    "publish": {
+      "provider": "github",
+      "repo": "maj-drive",
+      "owner": "imdadwf",
+      "releaseType": "release"
+    }
+  }
+}

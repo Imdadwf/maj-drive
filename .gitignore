@@ -1,0 +1,44 @@
+# Dépendances
+node_modules/
+package-lock.json
+yarn.lock
+
+# Fichiers de configuration et secrets
+.env
+.secret
+
+# Fichiers de logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Répertoires de build et de distribution
+/dist
+/build
+/out
+/releases
+/*.tar.gz
+/*.zip
+/*.exe
+/*.dmg
+
+# Fichiers de développement spécifiques à l'éditeur
+/.vscode/
+/.idea/
+/*.sublime-project
+/*.sublime-workspace
+
+# Fichiers système spécifiques
+.DS_Store
+.Thumbs.db
+Desktop.ini
+
+# Fichiers de cache de compilation
+/.pnp
+.pnp.js
+*.tsbuildinfo
+
+# Fichiers et dossiers générés pendant le runtime
+/tmp
+/temp
